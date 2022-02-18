@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Customer Service HUB">
+  <meta name="keywords" content="Customer, Service, HUB, CSHUB">
+  <meta name="author" content="Gravity Gaming, LLC">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/CSHUBFAVICON.png" type="image/png" sizes="16x16">
+  <script src="https://kit.fontawesome.com/9ce924de2a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="app.css">
+  <title>CSHUB</title>
+</head>
+
+<body>
+  <div class="fullPage">
+    <div class="topContainer">
+      <div class="topStyle">
+        <div class="leftContainer">
+          <div id="homeIcon">
+            <img src="images/CSHUBHOMEICON.png" href="CSHUBHOME2.html" width="40" height="40">
+          </div>
+        </div>
+        <div class="centerContainer">
+          <p>"Center Area"</p>
+        </div>
+        <div class="rightContainer">
+          <div id="accountIcon">
+            <img src="images/GG_youtube_98x98.png" href="CSHUBHOME2.html" width="40" height="40">
+          </div>
+          <div id="lightDark" class="fas fa-sun fa-fw">
+            <!--<div class="tooltip tooltiptext">Light/Dark</div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navigationContainer">
+      <div class="navigationStyle">
+        <ul>
+          <i class="fas fa-home fa-fw" id="homeButton" href="/CSHUB/CSHUBHOME.html"> Home </i>
+          <i class="fas fa-search fa-fw"> Search </i>
+          <i class="fas fa-book fa-fw"> Knowledge Library </i>
+          <!--
+            <li id="homeButton" href="/CSHUB/CSHUBHOME.html">CSHUB Home</li>
+          <li id="search">Search</li>
+          <li id="knowledgeLibrary">Knowledge Library</li>
+          -->
+        </ul>
+      </div>
+    </div>
+    <div class="openWindow">
+      <div class="openStyle">
+        <ul>
+          <li>
+            <h4>Test Info</h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="selectionContainer ">
+      <div class="selectionStyle">
+        <ul> Account Selection
+          <li class="accountButton" onclick="openAccount(event, 'account1')" id="defaultOpen">Account 1
+          </li>
+          <li class="accountButton" onclick="openAccount(event, 'account2')">Account 2</li>
+          <li class="accountButton" onclick="openAccount(event, 'account3')">Account 3</li>
+          <li class="accountButton" onclick="openAccount(event, 'account4')">Account 4</li>
+        </ul>
+      </div>
+    </div>
+    <div class="resultWindow">
+      <div class="resultStyle">
+        <div id="account1" class="currentResult">Account 1 Details
+          <p>Account 1 Paragraph</p>
+        </div>
+        <div id="account2" class="currentResult">Account 2 Details
+          <p>Account 2 Paragraph</p>
+        </div>
+        <div id="account3" class="currentResult">Account 3 Details
+          <p>Account 3 Paragraph</p>
+        </div>
+        <div id="account4" class="currentResult">Account 4 Details
+          <p>Account 4 Paragraph</p>
+        </div>
+      </div>
+    </div>
+    <!-- 
+    <div class="selectionContainer">
+      <div class="selectionStyle">
+        <ul> Account Selection
+          <li id="account1" data-tab-target="#account1">Account 1</li>
+          <li id="account2" data-tab-target="#account2">Account 2</li>
+          <li id="account3" data-tab-target="#account3">Account 3</li>
+          <li id="account4" data-tab-target="#account4">Account 4</li>
+        </ul>
+      </div>
+    </div>
+    <div class="resultWindow">
+      <div class="resultStyle">
+        <div id="result1" class="currentResult" class="active">Account 1 Details
+          <p>Account 1 Paragraph</p>
+        </div>
+        <div id="result2" class="currentResult">Account 2 Details
+          <p>Account 2 Paragraph</p>
+        </div>
+        <div id="result3" class="currentResult">Account 3 Details
+          <p>Account 3 Paragraph</p>
+        </div>
+        <div id="result4" class="currentResult">Account 4 Details
+          <p>Account 4 Paragraph</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+    <footer class="footer">
+    </footer>
+    <script src="app.js"></script>
+  </div>
+</body>
+
+</html>

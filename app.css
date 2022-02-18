@@ -1,0 +1,268 @@
+*{
+	box-sizing: border-box;
+	}
+html {
+	font-family: "Electolize", sans-serif;
+}
+body{
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+.fullPage{
+	background-color: rgba(7, 6, 6, 0.685);
+	border-style: solid;
+	border-width: 2px;
+	padding: 4px;;
+	border-color: red;
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template: repeat(12, minmax(20px, 1fr)) / repeat(12, minmax(20px, 1fr));
+	/*
+	grid-template-columns: repeat(12, minmax(20px, 1fr));
+	grid-template-rows: repeat(12, minmax(20px, 1fr));*/
+	/* grid-template: repeat(12, minmax(20px, 1fr)) / repeat(12, minmax(20px, 1fr));*/
+	/* grid-template: repeat(12, 1fr);*/
+	/* grid-auto-rows: minmax(20px, auto) */
+}
+
+.topContainer{
+	background-color: #0788B9;
+	padding: 2px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: orange;
+	grid-column: 1 / 13;
+	grid-row: 1 / 2;
+
+}
+	.topStyle{
+		padding: 2px;
+		display: grid;
+		grid-template-columns: repeat(12, minmax(20px, 1fr));
+		grid-template-rows: 1;
+	}
+
+	.leftContainer{
+		padding: 2px;
+		float: left;
+		border-style: solid;
+		border-width: 2px;
+		border-color: black;
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+
+	}
+	.centerContainer{
+		padding: 2px;
+		float: center;
+		border-style: solid;
+		border-width: 2px;
+		border-color: pink;
+		grid-column: 2 / 12;
+		grid-row: 1 / 2;
+	}
+	.rightContainer{
+		padding: 2px;
+		float: right;
+		border-style: solid;
+		border-width: 2px;
+		border-color: gold;
+		text-align: right;
+		grid-column: 12 / 13;
+		grid-row: 1 / 2;
+	}
+		.rightContainer i{
+			font-size: 2em;
+		}	
+		.rightContainer i:hover{
+			font-size: 2em;
+		}	
+.navigationContainer{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	float: left;
+	grid-column: 1 / 2;
+	grid-row: 2 / 4;
+	overflow: hidden;
+}
+	.navigationStyle::after{
+		display: table;
+	}
+	.navigationStyle{
+		font-weight: bold;
+		font-size: 12px;
+		border-style: solid;
+		border-width: 2px;
+		border-color: yellow;
+	}
+	.navigationStyle ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	/*
+	.navigationStyle li{
+		padding: 2px;
+		margin-bottom: 4px;
+		background-color: #0788B9;
+		color:black;
+	}
+	.navigationStyle li:hover {
+		background-color: #42EDF8;
+		font-size: 12px;
+		border-style: solid;
+		border-color: lightgrey;
+		border-width: 1px;
+	}
+	*/
+	.navigationStyle i{
+		display: table;
+		padding: 2px;
+		border: 2px;
+		margin-bottom: 4px;
+		background-color: #0788B9;
+		color:black;
+		font-size: 1em;
+	}
+	.navigationStyle i:hover {
+		background-color: #42EDF8;
+		font-size: 1em;
+		border-style: solid;
+		border-color: lightgrey;
+		cursor: pointer;
+	}
+	.tooltip{
+		position: relative;
+		display: inline-block;
+		border-bottom: 1px dotted black;
+	}
+	.tooltip .tooltiptext{
+		visibility: hidden;
+		width: 120px;
+		background-color: black;
+		color: #fff;
+		text-align: center;
+		border-radius: 5px 0;
+		position: absolute;
+		z-index: 1;
+		top: -5px;
+		right: 105%;
+		transition: opacity 1s;
+
+	}
+	.tooltip:hover .tooltiptext{
+		visibility: visible;
+	}
+	
+.openWindow{
+	float: left;
+	grid-column: 2 / 13;
+	grid-row: 2 / 3;
+}
+	.openStyle{
+		border-style: solid;
+		border-width: 2px;
+		border-color: green;
+	}
+.selectionContainer{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	float: left;
+	grid-column: 1 / 2;
+	grid-row: 4 / 12;
+}
+	.selectionStyle::after{
+		display: table;
+	}
+	.selectionStyle{
+		font-weight: bold;
+		font-size: 12px;
+		border-style: solid;
+		border-width: 2px;
+		border-color: yellow;
+	}
+	.selectionStyle ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.selectionStyle li{
+		padding: 2px;
+		margin-bottom: 4px;
+		background-color: #0788B9;
+		color:black;
+	}
+	.selectionStyle li:hover {
+		background-color: #42EDF8;
+		font-size: 12px;
+		border-style: solid;
+		border-color: lightgrey;
+		border-width: 1px;
+		cursor: pointer;
+	}
+	/*
+	.accountButton li.active{
+		background-color: black;
+	}
+	
+	.selectionStyle li:active{
+		background-color: black;
+	}
+	li#defaultOpen.accountButtonactive{
+		background-color: black;
+	}
+	li#defaultOpen.active{
+		background-color: black;
+	}
+	li#defaultOpen.accountButtonactive{
+		background: black;
+	}
+		li.active{
+		background-color: black;
+	}
+	li.accountButton{
+		background-color: #0788B9;	
+	}*/	
+	li.accountButton.active{
+		background-color: black;
+	}
+
+.resultWindow{
+	float: left;
+	text-align: center;
+	grid-column: 2 / 13;
+	grid-row: 3 / 12;
+	display: grid;
+	grid-template: repeat(12, minmax(5px, 1fr)) / repeat(12, minmax(5px, 1fr));
+	border-style: solid;
+	border-width: 2px;
+	border-color: green;
+}
+
+.footer{
+	float: left;
+	grid-column: 1 / 13;
+	grid-row: 12 / 13;
+	border-style: solid;
+	border-width: 2px;
+	border-color: brown;
+}
+
+.currentResult{
+	display: none;
+}
+/*
+li.active{
+	background-color: black;
+}
+
+
+
+.active{
+	display: block;
+}
+*/
